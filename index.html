@@ -9,19 +9,47 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+	
+
 
 </head>
 <body style = "margin:0">
 	<main>
-		<div class="intro">Hello, I'm Joe!</div>
+		<div class="w3-top">
+		  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:4px;">
+			<a href="#home" class="w3-bar-item w3-button">Home</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+			  <a href="#about" class="w3-bar-item w3-button">About</a>
+			  <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+			  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="intro" id="home">Hello, I'm Joe!</div>
 		<div class="tagline">iOS developer, web programmer, student</div>
 		<!-- https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">
 			<a target="_blank" href="https://github.com/jantongiovanni" class = "hvr-icon-bob"><i class="fab fa-github hvr-icon"></i></a>
 			<a target="_blank" href="https://www.linkedin.com/in/joe-antongiovanni-9646ba14a/" class = "hvr-icon-bob"><i class="fab fa-linkedin hvr-icon"></i></a>
 			<a target="_blank" href="https://repl.it/@JosephAntongiov" class = "hvr-icon-bob"><i class="fas fa-code hvr-icon"></i></a>
-    </div>
+		</div>
 	</main>
+	<main>
+		<div class="intro" id="about">About Me</div>
+		<div class="tagline">This is some text about myself</div>
+	</main>
+	<main>
+		<div class="intro" id="projects">Projects</div>
+		<div class="tagline">This is where my projects go</div>
+	</main>
+	<main>
+		<div class="intro" id="contact">Contact Info</div>
+		<div class="tagline">My contact info</div>
+	</main>
+	
 </body>
 </html>
