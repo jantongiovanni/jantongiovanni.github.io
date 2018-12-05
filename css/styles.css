@@ -59,7 +59,7 @@ main > .tagline {
 
 main > .paragraph {
 	font-size: 1.0rem;
-	margin: 1.5rem 0;
+	justify-content: left;
 	font-weight: 100;
 }
 
