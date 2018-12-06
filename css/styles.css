@@ -160,3 +160,19 @@ main > .paragraph {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
+
+#particle-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+
+
+
