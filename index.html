@@ -17,8 +17,7 @@
 	<div id="particle-container"></div>
 	<main>
 		<div class="w3-top">
-		<!--#232323FF-->
-		  <div class="w3-bar w3-padding-small w3-card" style="letter-spacing:4px; background: #485564;">
+		  <div class="w3-bar w3-padding-small w3-card" style="background: #485564;">
 			<a href="#home" class="w3-bar-item w3-button">Home</a>
 			<!-- Right-sided navbar links. Hide them on small screens -->
 			<div class="w3-right w3-hide-small">
@@ -76,19 +75,16 @@
 	</main>
 	<main id="projects">
 		<div class="intro">Projects</div>
-		<div class="tagline">This is where my projects will go</div>
-
-		<div class="w3-row-padding" style="margin:16 16px">
-			<div class="w3-third">
-			<div style="height:200px" class="w3-card-2 w3-col-center m4 w3-container w3-margin-bottom"><p>w3-card-2</p></div>
-			</div>
-			<div class="w3-third">
-			<div style="height:200px" class="w3-card-2 w3-col-center m4 w3-container w3-margin-bottom"><p>w3-card-2</p></div>
-			</div>
-			<div class="w3-third">
-			<div style="height:200px" class="w3-card-2 w3-col-center m4 w3-container w3-margin-bottom"><p>w3-card-2</p></div>
-			</div>
-		</div>
+		
+		<ul class="flex-container">
+		  <li class="flex-item">1</li>
+		  <li class="flex-item">2</li>
+		  <li class="flex-item">3</li>
+		  <li class="flex-item">4</li>
+		  <li class="flex-item">5</li>
+		  <li class="flex-item">6</li>
+		</ul>
+		
 	</main>
 	<main id="contact">
 		<div class="intro">Contact Info</div>
@@ -154,7 +150,7 @@ particlesJS("particle-container", {
     },
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -175,7 +171,7 @@ particlesJS("particle-container", {
         "mode": "repulse"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
@@ -199,7 +195,7 @@ particlesJS("particle-container", {
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 1
       },
       "remove": {
         "particles_nb": 2
@@ -209,10 +205,5 @@ particlesJS("particle-container", {
   "retina_detect": true
 });
 </script>
-	
-	
 </body>
-
-
-
 </html>
