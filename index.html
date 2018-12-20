@@ -18,7 +18,7 @@
 	<main>
 		<div class="w3-top">
 		  <div class="w3-bar w3-padding-small w3-card" style="background: #485564;">
-			<a href="#home" class="w3-bar-item w3-button">Home</a>
+			<a href="#home" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> Home</a>
 			<!-- Right-sided navbar links. Hide them on small screens -->
 			<div class="w3-right w3-hide-small">
 			  <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -44,15 +44,12 @@
 		
 		<div class="w3-content w3-container w3-padding-16">
 		<p class="w3-left-align">
-		I am a fourth year computer science student graduating in May from California State Universtiy Monterey Bay. <br><br>
-
-		My programming experience spans multiple languages including Swift, Java, JavaScript, C++, and Python, as well as web development experience. I am a quick learner and am always excited to be using new languages and technologies to expand my skillset and abilities. I have developed multiple UI driven applications and am familiar with integrating existing technologies into my projects to enhance their feature set and functionality. <br><br>
-		I have completed an internship over this last summer, collaborating with a team to develop new features for an iOS app, as well as having co-facilitated an iOS course at my university, becoming the first line of support for students in the class, guiding them towards best practices and providing help and feedback <br><br>
-		My current skill set with iOS and Swift includes experience with table and collection views, Mapkit, Auto Layout, animations, Grand Central Dispatch and resource management, database management tools like FireBase and Realm, and also familiarity with numerous API's and Pods, as well as source control using Git. <br><br>
-		I am excited to learn and grow, and I am thrilled to be seeking a position that will allow me to continue my passsion for mobile development and grow immensily in my abilities in the coming years.  <br>
-	</p>
-	</div>
-	
+		My name is Joe, I am a senior at Cal State Monterey Bay, and with a little bit of luck a soon to be Junior Developer! My coding experience has been broad, ranging from Java, C++ and Swift, to web development using HTML/CSS/JavaScript. <br><br>
+		I am a problem solver and a hard worker, and am never afraid of a good challenge! I love learning new things and sharing my experience, and am driven by helping others to succeed. <br><br>
+		I am a mentor, a programmer, and a lifelong student, and I can’t wait to see what the future has in store! <br>
+		</p>
+		</div>
+		
 	<div class="w3-row w3-center w3-padding-16 w3-hide-small">
 	  <div class="w3-quarter w3-section">
 		<span class="w3-xlarge">20+</span><br>
@@ -77,133 +74,160 @@
 		<div class="intro">Projects</div>
 		
 		<ul class="flex-container">
+		  <!--<li class="flex-item"><a href = "https://github.com/jantongiovanni/Twitter">Twitter</a></li>
+		  -->
 		  <li class="flex-item">1</li>
 		  <li class="flex-item">2</li>
 		  <li class="flex-item">3</li>
 		  <li class="flex-item">4</li>
-		  <li class="flex-item">5</li>
-		  <li class="flex-item">6</li>
 		</ul>
+		
+		
+		
+		<!--
+		<div id="like_button_container"></div>
+		-->
 		
 	</main>
 	<main id="contact">
-		<div class="intro">Contact Info</div>
-		<div class="tagline">joeantongiovanni@gmail.com</div>
+		<div class="intro w3-padding-bottom-32">Contact Info</div>
+		<div class="tagline" id="emailclip">joeantongiovanni@gmail.com</div>
+		<!--
+		<button onclick="copytoclip()"><i class="far fa-clipboard"></i></button>
+		<div class="icons-social">
+		<a href="#home" class = "hvr-icon-bob absolute"><i class="fas fa-arrow-up hvr-icon"></i></a>
+		</div>
+		-->
 	</main>
+	
+	<script>
+	function copytoclip() {
+	  var copyText = document.getElementById("emailclip");
+	  copyText.select();
+	  document.execCommand("copy");
+	  alert("Copied the text: " + copyText.value);
+	}
+	</script>
+	
+	
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- Load React component. -->
+    <script src="like_button.js"></script>
+	
 	<script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js'></script><script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
 	<script>
 	/* ---- particles.js config ---- */
-
-particlesJS("particle-container", {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#FFFFFF"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 2,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 1
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
+	particlesJS("particle-container", {
+	  "particles": {
+		"number": {
+		  "value": 80,
+		  "density": {
+			"enable": true,
+			"value_area": 800
+		  }
+		},
+		"color": {
+		  "value": "#FFFFFF"
+		},
+		"shape": {
+		  "type": "circle",
+		  "stroke": {
+			"width": 0,
+			"color": "#000000"
+		  },
+		  "polygon": {
+			"nb_sides": 5
+		  },
+		  "image": {
+			"src": "img/github.svg",
+			"width": 100,
+			"height": 100
+		  }
+		},
+		"opacity": {
+		  "value": 0.5,
+		  "random": false,
+		  "anim": {
+			"enable": false,
+			"speed": 1,
+			"opacity_min": 0.1,
+			"sync": false
+		  }
+		},
+		"size": {
+		  "value": 3,
+		  "random": true,
+		  "anim": {
+			"enable": false,
+			"speed": 40,
+			"size_min": 0.1,
+			"sync": false
+		  }
+		},
+		"line_linked": {
+		  "enable": true,
+		  "distance": 150,
+		  "color": "#ffffff",
+		  "opacity": 0.4,
+		  "width": 1
+		},
+		"move": {
+		  "enable": true,
+		  "speed": 2,
+		  "direction": "none",
+		  "random": false,
+		  "straight": false,
+		  "out_mode": "out",
+		  "bounce": false,
+		  "attract": {
+			"enable": false,
+			"rotateX": 600,
+			"rotateY": 1200
+		  }
+		}
+	  },
+	  "interactivity": {
+		"detect_on": "canvas",
+		"events": {
+		  "onhover": {
+			"enable": true,
+			"mode": "repulse"
+		  },
+		  "onclick": {
+			"enable": true,
+			"mode": "push"
+		  },
+		  "resize": true
+		},
+		"modes": {
+		  "grab": {
+			"distance": 400,
+			"line_linked": {
+			  "opacity": 1
+			}
+		  },
+		  "bubble": {
+			"distance": 400,
+			"size": 40,
+			"duration": 2,
+			"opacity": 8,
+			"speed": 3
+		  },
+		  "repulse": {
+			"distance": 200,
+			"duration": 0.4
+		  },
+		  "push": {
+			"particles_nb": 1
+		  },
+		  "remove": {
+			"particles_nb": 2
+		  }
+		}
+	  },
+	  "retina_detect": true
+	});
 </script>
 </body>
 </html>
