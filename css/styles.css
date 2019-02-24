@@ -64,6 +64,10 @@ main > .paragraph {
 	font-weight: 100;
 }
 
+main > .projects {
+	margin-top: 40px;
+}
+
 @import "compass/css3";
 
 .flex-container {  
