@@ -4,16 +4,16 @@ This site was built from the ground up using HTML, CSS, and Javascript. Its purp
 
 ## Features of the site:
 
-Interactive Particle effects
-Hover Animation
-Navigation
-Dynamic resizing
-Looks and works great on mobile
+- Interactive Particle effects
+- Hover Animation
+- Navigation
+- Dynamic resizing
+- Looks and works great on mobile
 
 ## GIF Showcase
 <img src= 'https://i.imgur.com/0VV7lkZ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src= 'https://i.imgur.com/oSnH1Xj.gif' title='Video Walkthrough' width='100px' alt='Video Walkthrough' />
+<img src= 'https://i.imgur.com/oSnH1Xj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
