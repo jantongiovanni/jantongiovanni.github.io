@@ -13,7 +13,9 @@ This site was built from the ground up using HTML, CSS, and Javascript. Its purp
 ## GIF Showcase
 <img src= 'https://i.imgur.com/0VV7lkZ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src= 'https://i.imgur.com/oSnH1Xj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+---
+
+<img src="/mobile.gif?raw=true" width="200px">
 
 
 
