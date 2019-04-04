@@ -7,15 +7,17 @@ This site was built from the ground up using HTML, CSS, and Javascript. Its purp
 - Interactive Particle effects
 - Hover Animation
 - Navigation
-- Dynamic resizing
 - Looks and works great on mobile
+	- Custom browser elements colors
+	- Dynamically resizing elements
+
 
 ## GIF Showcase
-<img src= 'https://i.imgur.com/0VV7lkZ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= 'https://i.imgur.com/0VV7lkZ.gif' title='Hoverable icons' width='400px' alt='Hoverable Icons' />
 
 ---
 
-<img src="/mobile.gif?raw=true" width="200px">
+<img src="/mobile.gif?raw=true" width="300px">
 
 
 
