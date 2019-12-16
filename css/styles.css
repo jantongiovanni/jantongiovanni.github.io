@@ -74,7 +74,7 @@ main > .paragraph {
 
 @import "compass/css3";
 
-.flex-container {  
+.flex-container {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -85,11 +85,11 @@ main > .paragraph {
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
- 
+
   align-items: center;
-  align-content: center; 
-  -webkit-flex-flow: wrap; 
-  justify-content: center; 
+  align-content: center;
+  -webkit-flex-flow: wrap;
+  justify-content: center;
 }
 
 [class^="flex-item"] {
@@ -101,7 +101,7 @@ main > .paragraph {
   margin-bottom: 10px;
   margin: 40px;
   width: 200px;
-  height: 200px;  
+  height: 200px;
   color: white;
   font-weight: bold;
   font-size: 1.5em;
@@ -124,12 +124,12 @@ main > .paragraph {
 [class^="flex-item"]:hover {
     background-color: rgba(250, 250, 250, 0.2);
     border: 1px white solid;
-  } 
+  }
 
 absolute {
   position: absolute;
   bottom: 10px;
-} 
+}
 
 .icons-social i {
 	padding: 10px;
@@ -238,4 +238,14 @@ absolute {
 canvas {
   display: block;
   vertical-align: bottom;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }
